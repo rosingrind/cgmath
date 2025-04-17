@@ -71,7 +71,7 @@ pub struct Matrix3<S> {
 ///
 /// This type is marked as `#[repr(C)]`.
 #[repr(C)]
-#[derive(Copy, Clone, PartialEq)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
 pub struct Matrix4<S> {
     /// The first column of the matrix.
